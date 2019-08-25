@@ -1,0 +1,15 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Mein erstes JSON-File",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GLZR",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {}
+}
