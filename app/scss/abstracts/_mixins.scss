@@ -1,0 +1,28 @@
+@mixin clearfix {
+    
+    &::after {
+        
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+}
+
+@mixin text-gradient-primary {
+    
+    display: inline-block;
+    background-image: $gradient-diagonal-primary;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+@mixin align-vertical-center {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+    
+}

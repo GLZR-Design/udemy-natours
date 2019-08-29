@@ -1,0 +1,72 @@
+// COLORS
+
+$primary: #55c57a;
+$primary-light: #7ed56f;
+$primary-dark: #28b485;
+
+$secondary-light: #ffb900;
+$secondary-dark: #ff7730;
+
+$tertiary-light: #2998ff;
+$tertiary-dark: #5643fa;
+
+
+$white: #FFF;
+$grey-100: #f7f7f7;
+$grey-300: #eee;
+$grey-400: #999;
+$grey-500: #777;
+$grey-900: #222;
+$black: #000;
+
+// GRADIENT
+
+$gradient-diagonal-primary-alpha: linear-gradient(
+                            to right bottom, 
+                            rgba($primary-light, 0.8),
+                            rgba($primary-dark, 0.8));
+
+$gradient-diagonal-primary: linear-gradient(
+                            to right bottom, 
+                            ($primary-light),
+                            ($primary-dark));
+
+$gradient-diagonal-secondary: linear-gradient(
+                            to right bottom, 
+                            ($secondary-light),
+                            ($secondary-dark));
+
+$gradient-diagonal-secondary-alpha: linear-gradient(
+                            to right bottom, 
+                            rgba($secondary-light, 0.8),
+                            rgba($secondary-dark, 0.8));
+
+$gradient-diagonal-tertiary: linear-gradient(
+                            to right bottom, 
+                            ($tertiary-light),
+                            ($tertiary-dark));
+
+$gradient-diagonal-tertiary-alpha: linear-gradient(
+                            to right bottom, 
+                            rgba($tertiary-light, 0.8),
+                            rgba($tertiary-dark, 0.8));
+    
+// GRID 
+
+$grid-width: 114rem;
+$gutter-horizontal: 5rem;
+$gutter-vertical: 5rem;
+
+// FONT
+
+$default-font-size: 1.6rem;
+
+// SHADOWS
+
+$box-shadow-sm: 0 0.5rem 1rem rgba($black, 0.1);
+$box-shadow-basic: 0 1rem 1.5rem rgba($black, 0.2);
+$box-shadow-lg: 0 1.5rem 2rem rgba($black, 0.1);
+
+// BORDER-RADIUS
+
+$default-border-radius: 3px;
