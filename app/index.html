@@ -24,23 +24,34 @@
         <div class="navigation__background"></div>
         
         <nav class="navigation__nav">
+            
             <ul class="navigation__list">
+            
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natours</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benefits</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+            
+           
             </ul>
         </nav>
         
     </div>
     
 <header class="header">
-  <div class="header__logo-box"> <img src="img/logo-white.png" alt="Logo" class="header__logo"> </div>
-  <div class="header__text-box">
-    <h1 class="heading-primary"> <span class="heading-primary--main">Outdoors</span> <span class="heading-primary--sub">is where life happens</span> </h1>
-    <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a> </div>
+  
+    <div class="header__logo-box"> <img src="img/logo-white.png" alt="Logo" class="header__logo"> </div>
+  
+    <div class="header__text-box">
+    
+        <h1 class="heading-primary"> <span class="heading-primary--main">Outdoors</span> <span class="heading-primary--sub">is where life happens</span> </h1>
+        <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a> 
+    
+    </div>
+
 </header>
+    
 <main>
   <section class="section-about">
     <div class="text-center margin-bottom-lg">
@@ -63,9 +74,27 @@
       <div class="col-1-of-2">
         
           <div class="composition">
-              <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-              <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-              <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+              
+              <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                   class="composition__photo composition__photo--p1"
+                   alt="Photo 1" 
+                   sizes="(max-width: 900px) 20vw, (max-width: 600) 30vw, 300px"
+                   src="img/nat-1-large.jpg" >
+              
+              
+              <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                   class="composition__photo composition__photo--p2"
+                   alt="Photo 2" 
+                   sizes="(max-width: 900px) 20vw, (max-width: 600) 30vw, 300px"
+                   src="img/nat-2-large.jpg" >
+              
+              
+              <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                   class="composition__photo composition__photo--p3"
+                   alt="Photo 3" 
+                   sizes="(max-width: 900px) 20vw, (max-width: 600) 30vw, 300px"
+                   src="img/nat-3-large.jpg" >
+              
           </div>  
         
         </div>
@@ -113,7 +142,7 @@
         </div>
         
     </section>
-    <section class="section-tours">
+    <section class="section-tours" id="section-tours">
     
         <div class="text-center margin-bottom-lg">
             <h2 class="heading-secondary"> Exciting tours for adventurous people </h2>
@@ -154,7 +183,7 @@
                             <p class="card__price-only">only</p>
                             <p class="card__price-value">600€</p>
                         </div>
-                        <a href="#" class="btn btn--white btn--animated">Book now</a>
+                        <a href="#popup" class="btn btn--white">Book now</a>
                     </div>
                     </div>    
                     
@@ -196,7 +225,7 @@
                             <p class="card__price-only">only</p>
                             <p class="card__price-value">497€</p>
                         </div>
-                        <a href="#" class="btn btn--white btn--animated">Book now</a>
+                        <a href="#popup" class="btn btn--white">Book now</a>
                     </div>
                     
                     </div>    
@@ -238,7 +267,7 @@
                             <p class="card__price-only">only</p>
                             <p class="card__price-value">897€</p>
                         </div>
-                        <a href="#" class="btn btn--white btn--animated">Book now</a>
+                        <a href="#popup" class="btn btn--white">Book now</a>
                     </div>
                     
                     </div>    
@@ -253,6 +282,29 @@
         
             <a href="#" class="btn btn--primary">Discover all tours</a>
         
+        </div>
+        
+        <div class="popup" id="popup">
+            <div class="popup__content">
+            
+                <div class="popup__left">
+    
+                    <img src="img/nat-8.jpg" class="popup__img" alt="Tour photo">
+                    <img src="img/nat-9.jpg" class="popup__img" alt="Tour photo">
+                    
+                </div>
+            
+                <div class="popup__right">
+                    
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary margin-bottom-sm">Start booking now</h2>
+                    <h3 class="heading-tertiary margin-bottom-xs">Important &ndash; Please read these terms before booking</h3>
+                    <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quibusdam delectus et aliquid nostrum molestiae vitae quam dignissimos consectetur maiores esse, iusto obcaecati voluptatem reprehenderit ab repudiandae assumenda exercitationem accusantium minus illum, incidunt soluta. Magnam delectus expedita cum asperiores quaerat deserunt maiores impedit, cupiditate necessitatibus! Doloremque error natus harum quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolor laborum, suscipit aspernatur minima debitis assumenda dolorum qui esse eveniet. Ullam hic fuga, aspernatur ab cupiditate, ratione nobis alias laudantium pariatur, quidem earum perspiciatis. Neque porro, modi quod! Eius ipsa voluptates odio assumenda possimus excepturi quos sint veritatis voluptate labore!</p>
+                    <a href="#" class="btn btn--primary">Book now</a>
+                    
+                </div>
+                
+            </div>
         </div>
         
     </section>
@@ -405,8 +457,14 @@
     
     <div class="footer__logo-box">
     
-        <img src="img/logo-green-2x.png" alt="Full Logo" class="footer__logo">
-    
+        <picture class="footer__logo">
+        
+            <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+
+            <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full Logo">
+            
+        </picture>
+
     </div>
     
     <div class="row">

@@ -4,6 +4,12 @@
     padding: 10rem 0;
     font-size: 1.4rem;
     
+    @include breakpoint(md-port) {
+        
+        padding: 8rem 0;
+        
+    }
+    
     &__logo-box {
         
         text-align: center;
@@ -22,12 +28,26 @@
         border-top: 1px solid $grey-500;
         padding-top: 1rem;
         display: inline-block;
+        
+        @include breakpoint(md-port) {
+            
+            width: 100%;
+            text-align: center;
+            
+        }
     }
     
     &__copyright {
         
         float: right; 
         width: 80%;
+        
+        @include breakpoint(md-port) {
+            
+            width: 100%;
+            text-align: left;
+            
+        }
         
     }
     

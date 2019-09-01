@@ -6,7 +6,23 @@
     &:not(:last-child) {
      
         margin-bottom: $gutter-vertical; 
+        
+        @include breakpoint(md-port) {
+            
+            margin-bottom: $gutter-vertical-sm;
+            
+        }
+        
     }
+    
+    @include breakpoint(md-port) {
+            
+        max-width: 50rem;
+        padding: 0 3rem;
+            
+    }    
+    
+    
     
     @include clearfix;
     
@@ -17,6 +33,20 @@
         &:not(:last-child) {
             
             margin-right: $gutter-horizontal;
+            
+            @include breakpoint(md-port) {
+            
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-sm;
+            
+            }
+            
+            
+        }
+        
+        @include breakpoint(md-port) {
+            
+            width: 100% !important;
             
         }
     }

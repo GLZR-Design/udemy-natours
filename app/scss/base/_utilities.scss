@@ -3,19 +3,46 @@
 }
 
 .margin-bottom-lg {
-    margin-bottom: 8rem !important;    
+    margin-bottom: 8rem !important;
+    
+    @include breakpoint(md-port) {
+        
+        margin-bottom: 6rem !important;
+        
+    }    
 }
 
 .margin-bottom-md {
     margin-bottom: 6rem !important;    
+    
+    @include breakpoint(md-port) {
+        
+        margin-bottom: 5rem !important;
+        
+    }    
+
 }
 
 .margin-bottom-sm {
     margin-bottom: 3rem !important;
+    
+    @include breakpoint(md-port) {
+        
+        margin-bottom: 2rem !important;
+        
+    }    
+
 }
 
 .margin-bottom-xs {
     margin-bottom: 1.5rem !important;
+    
+    @include breakpoint(md-port) {
+        
+        margin-bottom: 1rem !important;
+        
+    }    
+
 }
 
 .margin-top-xl {

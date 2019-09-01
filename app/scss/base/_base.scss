@@ -9,11 +9,39 @@
 // REM DEFINITION
 
 html {
-    font-size: 62.5%;
+    
+    // Was ist 1rem?
+    
+    font-size: 62.5%; // 1rem = 10px 
+    
+    @include breakpoint(md-land) {
+        
+        font-size: 56.25%; // 1rem = 9px
+    }
+
+    @include breakpoint(md-port) {
+
+        font-size: 50%; // 1rem = 8px
+    }
+    
+    @include breakpoint(xl) {
+        
+        font-size: 75%; // 1rem = 12px
+    }
+    
 }
 
 // BOX MODEL
 
 body {
+    
     box-sizing: border-box;
+    padding: 2rem;
+    
+    @include breakpoint(md-port) {
+        
+        padding: 0;
+        
+    }
+
 }

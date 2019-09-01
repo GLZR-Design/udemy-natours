@@ -10,6 +10,20 @@
     font-size: $default-font-size;
     transform: skewX(-12deg);
     
+    @include breakpoint(md-port) {
+        
+        width: 100%; 
+        padding: 4rem;
+        padding-left: 7rem;
+        
+    }
+    
+    @include breakpoint(sm) {
+        
+        transform: skewX(0deg);
+        
+    }
+    
     &__shape {
         position: relative;
         width: 15rem;
@@ -21,6 +35,12 @@
         clip-path:  circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
         overflow: hidden;
+        
+        @include breakpoint(sm) {
+
+            transform: translate(-3rem) skewX(0deg);
+
+        }        
 
     }
     
@@ -34,6 +54,14 @@
     
     &__text {
         transform: skewX(12deg);
+
+        @include breakpoint(sm) {
+
+            transform: skewX(0deg);
+
+        }        
+
+    
     }
     
     &__caption {

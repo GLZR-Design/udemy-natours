@@ -35,3 +35,46 @@
     transform: translate(-50%, -50%)
     
 }
+
+// MEDIA QUERY MANAGER 
+
+/* 
+
+sm: 0 - 600px        Phone
+md-port: 600 - 900px      Tablet portrait
+md-land: 900 - 1200px     Tablet landscape
+lg: 1200 - 1800px    Desktop [normal]
+xl: 1800px +         Big desktop
+
+1em = 16px
+
+*/
+
+@mixin breakpoint($breakpoint-size) {
+    
+    
+    @if $breakpoint-size == sm {
+        
+        @media (max-width: 36.5em) { @content }     // 600px
+        
+    }
+    
+    @if $breakpoint-size == md-port {
+        
+        @media (max-width: 56.25em) { @content }    // 900px
+        
+    }
+    
+    @if $breakpoint-size == md-land {
+        
+        @media (max-width: 75em) { @content }     // 1200px
+        
+    }
+    
+    @if $breakpoint-size == xl {
+        
+        @media (min-width: 112.5em) { @content }     // 1800px
+        
+    }
+    
+}

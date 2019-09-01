@@ -8,12 +8,26 @@
     box-shadow: $box-shadow-basic;
     transition: all .3s;
     
+    @include breakpoint(md-port) {
+        
+        padding: 2rem;
+                
+    }
+    
     &__icon {
         font-size: 6rem;
         margin-bottom: 0.5rem;
         @include text-gradient-primary;
-    }
+        
+        @include breakpoint(md-port) {
+        
+            font-size: 8rem;
+            margin-bottom: -1rem;
+                        
+        }
     
+    }
+
     &__text {}
     
     &:hover {

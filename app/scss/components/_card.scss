@@ -6,7 +6,7 @@
     height: 53rem;
     
     &__side {
-    background-color: orangered;
+
     height: 53rem;
     transition: all .8s ease;
     position: absolute;
@@ -154,11 +154,11 @@
     
     &__cta {
         @include align-vertical-center;
+        text-align: center;
     }
     
     &__price-box {
         color: $white;
-        text-align: center;
         margin-bottom: 8rem;
         
     }
@@ -172,6 +172,92 @@
     &__price-value {
         font-size: 6rem;
         font-weight: 100;
+        
+    }
+
+    @include breakpoint(md-port) {
+        
+        box-shadow: $box-shadow-basic;        
+        height: auto;
+        background-color: $white;
+        border-radius: 3px;
+
+        &__side {
+            
+        height: auto;
+        transition: all .8s ease;
+        position: relative;
+        box-shadow: none;    
+        overflow: hidden;
+        
+            &--front {
+                
+            border-radius: 0;
+                
+            }
+            
+            &--back {
+                
+            border-radius: 0;
+            margin-top: -3.5rem;
+            transform: rotateY(0deg);
+            -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+                
+            }
+
+        }
+
+        &:hover &__side--front {
+
+            transform: rotateY(0deg);
+
+        }
+
+        &:hover &__side--back {
+
+            transform: rotateY(0deg);
+
+        }
+
+        // FRONT SIDE STYLING 
+        
+        &__details {
+            
+        padding: 3rem 0 5rem 0;        
+            
+        }
+        
+        // BACK SIDE STYLING
+
+        &__cta {
+            
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+            text-align: center;
+            padding: 5rem;
+
+        }
+
+        &__price-box {
+            margin-bottom: 2rem;
+
+        }
+
+        &__price-only {
+            font-size: 2rem;
+            text-transform: uppercase;
+
+        }
+
+        &__price-value {
+            font-size: 7rem;
+            font-weight: 100;
+
+        }    
         
     }
     
